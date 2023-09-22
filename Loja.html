@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Product Design</title>
+    <style>
+        /* Adicione o CSS personalizado aqui */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 1.7rem;
+            font-family: 'Merriweather Sans', sans-serif;
+            background: #2c3e50; /* Cor de fundo desejada */
+            color: #ececec;
+            padding: 4rem;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 5rem;
+            font-size: 4rem;
+        }
+
+        .all-products {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            overflow: hidden;
+            background: #ffffff;
+            color: #21201e;
+            text-align: center;
+            width: 240px;
+            height: 400px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.2rem;
+            margin: 2rem;
+        }
+
+        .product .product-title, .product .product-price {
+            font-size: 18px;
+        }
+
+        .product:hover img {
+            transform: scale(1.1);
+        }
+
+        .product:hover {
+            box-shadow: 5px 15px 25px #eeeeee;
+        }
+
+        .product img {
+            height: 150px; /* Altura da imagem reduzida */
+            margin: 1rem;
+            transition: all 0.3s;
+        }
+
+        .product a:link, .product a:visited {
+            color: #ececec;
+            display: inline-block;
+            text-decoration: none;
+            background-color: #2c3e50;
+            padding: 1.2rem 3rem;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .product a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <section class="products">
+        <h2>Nossos Produtos</h2>
+        <div class="all-products">
+            <div class="product">
+                <img src="Vermifago de Cachorro.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Ceva Vermífugo Canex Composto para Cães, 4 Comprimidos</h4>
+                    <p class="product-price">R$ 6,50</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho </a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Vermifago de Gato.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Vermífugo Palatável Ceva Petzi Gatos 600 mg - 4 Comprimidos</h4>
+                    <p class="product-price">R$ 20,99</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Ração de Gato adulto.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Ração Para Gatos Adultos Sabor Frango Bocão Premium 10,1kg9 </h4>
+                    <p class="product-price">R$ 86,95</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Ração de Cachorro adulto.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Ração Pedigree Carne e Vegetais Para Cães Adultos Raças Médias e Grandes 10.1 kg</h4>
+                    <p class="product-price">R$ 150,00</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Ração de Gato filhote.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Ração Golden Gatos Filhotes Sabor Frango - 3kg Premier Pet</h4>
+                    <p class="product-price">R$ 65,90</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Ração de Cachorro filhote.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Ração Golden Fórmula Cães Filhotes Médios e Grandes Frango 1kg</h4>
+                    <p class="product-price">R$ 23,56</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Ração de Peixe.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Ração Poytara Black Line Para Peixe Betta Aquários 14g</h4>
+                    <p class="product-price">R$ 27,85</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Ração de Porquinho da India.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Ração Nutrópica para Porquinho-da-Índia Super Premium 300 g</h4>
+                    <p class="product-price">R$ 29,90</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>            <div class="product">
+                <img src="Briquedo Para Cachorro Multicunções.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Brinquedo Interativo 3 em 1 Para Cães</h4>
+                    <p class="product-price">R$ 20,00</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>            <div class="product">
+                <img src="Arranhador para Gato.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Arranhador Brinquedo Gato Lua</h4>
+                    <p class="product-price">R$ 39,99</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>            <div class="product">
+                <img src="Comedouro Inox.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Comedouro Chalesco Inox Antiderrapante</h4>
+                    <p class="product-price">R$ 50.00</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Comedouro e Bebedouro.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Comedouro Bebedouro Duplo Pet Mdf Elevado Cachorro </h4>
+                    <p class="product-price">R$ 70.00</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Tratamento de Água.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Kit tratamento e teste de PH em água de aquário Labcon</h4>
+                    <p class="product-price">R$ 50.00</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Inibidor de Cio.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Inibidor de Cio Anticion para Cadelas e Gatas</h4>
+                    <p class="product-price">R$ 13,50</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Petisco para Cachorro Pedigree.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Biscoito recheado para cachorro Pedigree Marrobone para Cães Adultos 500g</h4>
+                    <p class="product-price">R$ 28.60</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Petisco para Gato.jpeg">
+                <div class="product-info">
+                    <h4 class="product-title">Petisco para Gato Whiskas Temptations Salmão – 40g</h4>
+                    <p class="product-price">R$ 10.00</p>
+                    <a class="product-btn" href="#">Adicionar Ao Carrinho</a>
+                </div>
+            </div>
+            
+            
+
+            
+        </div>
+    </section>
+</body>
+</html>
